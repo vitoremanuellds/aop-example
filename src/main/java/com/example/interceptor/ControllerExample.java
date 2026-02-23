@@ -14,7 +14,7 @@ public class ControllerExample {
         return ResponseEntity.ok("Hello World!");
     }
 
-    @GetMapping("/intercept")
+    @GetMapping("/intercept-custom")
     @Intercept(value = "Custom Value")
     public ResponseEntity<String> intercept() {
         return ResponseEntity.ok("Intercepted!");
